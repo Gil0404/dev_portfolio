@@ -1,8 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
-import { AnimatePresence, motion, stagger } from "framer-motion";
-import Landing from "../components/landing";
+import React from "react";
 
 function Try() {
   // return (
@@ -15,7 +13,14 @@ function Try() {
   //   </div>
   // );
 
-  return <Landing />;
+  return (
+    <div className="flex w-screen h-screen bg-green-200 flex-col justify-center items-center group">
+      <h2>sddd</h2>
+
+      <input className="w-screen h-20 bg-yellow-100 focus:text-red-700 peer" />
+      <h1 className="text-slate-400  peer-focus:text-red-600">sdds</h1>
+    </div>
+  );
 }
 
 export default Try;

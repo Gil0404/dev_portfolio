@@ -15,6 +15,8 @@ const config: Config = {
       },
       fontFamily: {
         main: ["var(--font-main)"],
+        lite: ["var(--font-lite)"],
+        bold: ["var(--font-bold)"],
       },
 
       height: {

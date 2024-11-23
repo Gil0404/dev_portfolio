@@ -1,27 +1,26 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import Navbar from "../reusable/navbar";
 import Hero from "./hero";
-import { useScroll, useMotionValueEvent } from "framer-motion";
 
 export default function Landing() {
   const scrollRef = useRef(null); // Ref to the scroll container
-  const [colors, setColors] = useState("#7469B6"); // Initial background color state
+  // const [colors, setColors] = useState("#7469B6"); // Initial background color state
 
   // Use the `useScroll` hook to track the scroll position of the container
-  const { scrollY } = useScroll({ target: scrollRef });
+  // const { scrollY } = useScroll({ target: scrollRef });
 
   // Use `useMotionValueEvent` to listen to scroll position changes
-  useMotionValueEvent(scrollY, "change", (scrollval) => {
-    // You can adjust this threshold based on your desired scroll distance
-    if (scrollval >= 800) {
-      setColors("#ccf381"); // Change to a new color
-    } else {
-      setColors("#7469B6"); // Default color
-    }
-    console.log(scrollval); // Log the scroll position for debugging
-  });
+  // useMotionValueEvent(scrollY, "change", (scrollval) => {
+  //   // You can adjust this threshold based on your desired scroll distance
+  //   if (scrollval >= 800) {
+  //     setColors("#ccf381"); // Change to a new color
+  //   } else {
+  //     setColors("#7469B6"); // Default color
+  //   }
+  //   console.log(scrollval); // Log the scroll position for debugging
+  // });
 
   return (
     <main

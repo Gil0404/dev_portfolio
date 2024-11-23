@@ -1,11 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import {
-  AnimatePresence,
-  motion,
-  useMotionValueEvent,
-  useScroll,
-} from "framer-motion";
+import React, { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import Menusvg from "../svg/menu";
 import Logo from "../svg/logo";
 
