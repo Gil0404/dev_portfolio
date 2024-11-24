@@ -1,6 +1,4 @@
 import Hero from "./components/hero";
-
-import Form from "./components/form";
 import Tech from "./components/tech";
 
 export default function Home() {
@@ -12,9 +10,7 @@ export default function Home() {
       <div className=" snap-center flex">
         <Tech />
       </div>
-      <div className="h-screen max-h-max snap-center flex">
-        <Form></Form>
-      </div>
+      <div className="h-screen max-h-max snap-center flex"></div>
       <div className="h-screen max-h-max snap-center  ">
         <Hero />
       </div>
