@@ -91,7 +91,7 @@ const containerVar = {
   initial: {
     scaleX: 0,
     scaleY: 0,
-    opacity: 0,
+    opacity: 0.0001,
   },
   animate: {
     scaleX: 1,
@@ -109,7 +109,7 @@ const containerVar = {
   exit: {
     scaleX: 0,
     scaleY: 0,
-    opacity: 0,
+    opacity: 0.0001,
 
     transition: {
       duration: 0.3,
@@ -123,7 +123,7 @@ const containerVar = {
 // Item variants for staggered animation
 const itemVar = {
   initial: {
-    opacity: 0,
+    opacity: 0.0001,
     y: 20, // Items start lower
   },
   animate: {
@@ -134,7 +134,7 @@ const itemVar = {
     },
   },
   exit: {
-    opacity: 0,
+    opacity: 0.0001,
     y: -20, // Items move upwards when exiting
     transition: {
       duration: 0.3,
