@@ -3,6 +3,11 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Menusvg from "../svg/menu";
 import Logo from "../svg/logo";
+import Facebook from "../svg/facebook";
+import Github from "../svg/github";
+import Instagram from "../svg/instagram";
+import Linkedin from "../svg/linkedin";
+import Twitter from "../svg/twitter";
 
 interface listItem {
   title: string;
@@ -19,7 +24,10 @@ const listNav = [
 function Menulist({ title, path }: listItem) {
   return (
     <motion.li variants={itemVar} className="m-1">
-      <a className=" uppercase" href={path}>
+      <a
+        className=" uppercase font-bold hover:border-b-4 hover:border-b-primary delay-100"
+        href={path}
+      >
         {title}
       </a>
     </motion.li>
@@ -75,10 +83,26 @@ function Navbar() {
 
               <div className="m-10"></div>
               <motion.div
-                className="flex flex-row bg-green-400"
+                className="flex flex-col items-center"
                 variants={itemVar}
               >
-                Some content here
+                <h1 className="font-bold text-xl">Socials</h1>
+                <motion.div
+                  className="flex flex-row w-full justify-start items-center gap-1 p-1 mt-2"
+                  variants={itemVar}
+                >
+                  <Github path="https://github.com/Gil0404" title="Github" />
+                  <Facebook
+                    path="https://www.facebook.com/garcia.gilbert.0"
+                    title="Facebook"
+                  />
+                  <Twitter path="dd" title="Twitter" />
+                  <Instagram path="dd" title="Instagram" />
+                  <Linkedin
+                    path="https://www.linkedin.com/in/gilbert-garcia-4a790a305/"
+                    title="Linkedin"
+                  />
+                </motion.div>
               </motion.div>
             </motion.ul>
           )}

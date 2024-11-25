@@ -1,6 +1,11 @@
 "use client";
 import Image from "next/image";
 import React from "react";
+import Facebook from "../svg/facebook";
+import Twitter from "../svg/twitter";
+import Instagram from "../svg/instagram";
+import Linkedin from "../svg/linkedin";
+import Github from "../svg/github";
 
 function Hero() {
   return (
@@ -8,20 +13,31 @@ function Hero() {
       <div className=" w-screen h-hero flex flex-row  md:flex-row xs:flex-col">
         <div className="h-hero flex-col flex justify-center items-center  font-extrabold ">
           <div className="xs:text-center md:text-left w-[1000px] md:w-[1000px] xs:w-full text-left">
-            <h1
-              className="text-secondary md:text-5xl xs:text-3xl 
-          "
-            >
+            <h1 className="text-secondary md:text-5xl xs:text-3xl ">
               Hey There! I’m <span className=" text-white">GIL</span>
               <br />
               <span className="xs:text-base md:text-4xl text-white">
                 A Web Developer.
               </span>
             </h1>
+
             <h1 className="xs:text-sm md:text-base text-white font-thin">
               Delivering innovative solutions with skills in <br />
               React.js, Next.js, Firebase, Node.js, GitHub, and Git.
             </h1>
+          </div>
+          <div className="flex flex-row w-full justify-start items-center gap-1 p-1 mt-2">
+            <Github path="https://github.com/Gil0404" title="Github" />
+            <Facebook
+              path="https://www.facebook.com/garcia.gilbert.0"
+              title="Facebook"
+            />
+            <Twitter path="dd" title="Twitter" />
+            <Instagram path="dd" title="Instagram" />
+            <Linkedin
+              path="https://www.linkedin.com/in/gilbert-garcia-4a790a305/"
+              title="Linkedin"
+            />
           </div>
         </div>
         <div className="h-hero flex-col flex justify-center items-center w-full font-extrabold xs:text-left  xs:mb-5 md:mb-0">
