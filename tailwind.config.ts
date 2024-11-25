@@ -18,12 +18,14 @@ const config: Config = {
         lite: ["var(--font-lite)"],
         bold: ["var(--font-bold)"],
       },
-
       height: {
         hero: "800px",
       },
       maxHeight: {
         max: "1000px",
+      },
+      maxWidth: {
+        max: "1536px",
       },
       screens: {
         xs: "390px",
