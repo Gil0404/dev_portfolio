@@ -1,7 +1,6 @@
 import Hero from "./components/hero";
 import Navbar from "./reusable/navbar";
 import Form from "./components/form";
-import Tech from "./components/tech";
 
 export default function Home() {
   return (
