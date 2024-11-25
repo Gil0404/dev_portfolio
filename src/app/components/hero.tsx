@@ -14,7 +14,9 @@ function Hero() {
             >
               Hey There! I’m <span className=" text-white">GIL</span>
               <br />
-              <span className="xs:text-base md:text-4xl">A Web Developer.</span>
+              <span className="xs:text-base md:text-4xl text-white">
+                A Web Developer.
+              </span>
             </h1>
             <h1 className="xs:text-sm md:text-base text-white font-thin">
               Delivering innovative solutions with skills in <br />

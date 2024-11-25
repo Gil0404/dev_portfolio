@@ -53,6 +53,8 @@ function Navbar() {
         <button
           onClick={() => setOpen(!open)}
           className=" w-10 h-10 rounded-xl z-50 p-1 m-3"
+          aria-label="Menu"
+          title="Menu"
         >
           <Menusvg isactive={open} fillcolor={"#000000  "} />
         </button>
