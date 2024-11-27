@@ -87,7 +87,7 @@ export default function Form() {
         sendMessage(formValue);
       }}
     >
-      <div className="w-screen h-screen flex flex-col justify-center items-center font-thin text-slate-500">
+      <div className="w-screen h-screen max-h-max flex flex-col justify-center items-center font-thin text-slate-500">
         <div className="w-[700px] flex justify-center text-4xl md:text-4xl xs:text-3xl text-primary pt-20 pb-10 flex-col ">
           <h1 className="text-center font-bold">Send me a message!</h1>
           <label className="text-center md:text-base xs:text-sm text-base font-medium text-slate-700 mt-5">

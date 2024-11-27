@@ -26,7 +26,7 @@ function Hero() {
               React.js, Next.js, Firebase, Node.js, GitHub, and Git.
             </h1>
           </div>
-          <div className="flex flex-row w-full justify-start items-center gap-1 p-1 mt-2">
+          <div className="flex flex-row w-full justify-start items-center gap-1 p-1 mt-2 xs:justify-center md:justify-start">
             <Github path="https://github.com/Gil0404" title="Github" />
             <Facebook
               path="https://www.facebook.com/garcia.gilbert.0"
