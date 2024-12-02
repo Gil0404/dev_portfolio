@@ -30,14 +30,13 @@ export default function About() {
           className=" flex flex-col justify-center items-center w-full h-full"
           ref={container}
         >
-          {" "}
           <motion.h1
             className="text-3xl text-primary font-bold"
             variants={animate}
             initial="intial"
             animate={inView ? "inView" : "intial"}
           >
-            I'm GILBERT GARCIA
+            I&apos;m GILBERT GARCIA
           </motion.h1>
           <motion.h1
             className="text-md  text-[#3d155f] font-lite"
