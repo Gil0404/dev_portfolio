@@ -17,6 +17,7 @@ export default function About() {
       y: 0,
       transition: {
         ease: "easeInOut",
+        delay: 0.3,
         duration: 1,
       },
     },
@@ -50,12 +51,15 @@ export default function About() {
         </div>
       </div>
       <div className="w-1/2 h-full md:w-1/2 xs:w-full md:h-full xs:h-1/2">
-        <div
+        <motion.div
           className=" flex flex-col justify-center items-center w-full h-full "
           ref={container}
+          variants={animate}
+          initial="intial"
+          animate={inView ? "inView" : "intial"}
         >
           <Aboutsvg />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ export default function Home() {
         <Hero />
       </div>
       <div className="h-screen max-h-max snap-center flex"></div>
+      <div className="h-1 bg-primary w-screen max-w-max mx-auto" />
       <div className="h-screen max-h-max snap-center flex">
         <About />
       </div>
