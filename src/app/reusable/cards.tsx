@@ -10,7 +10,11 @@ export default function Card({ id, git, link, pic, name }: projecttype) {
         <p className=" font-bold text-slate-800">{link}</p>
       </div>
       <div className="w-5/12 h-full ">
-        <Image src={pic} alt={id}></Image>
+        <img
+          src={pic ? pic : "/prof.webp"}
+          className=" object-cover h-full w-full"
+          alt={link}
+        />
       </div>
     </div>
   );
