@@ -13,7 +13,7 @@ export default function Card({ id, git, link, pic, name }: projecttype) {
         <img
           src={pic ? pic : "/prof.webp"}
           className=" object-cover h-full w-full"
-          alt={link}
+          alt={id}
         />
       </div>
     </div>
