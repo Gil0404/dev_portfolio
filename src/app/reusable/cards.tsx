@@ -11,14 +11,14 @@ export default function Card({
   tools,
 }: projecttype) {
   return (
-    <div className=" h-1/3 lg:h-1/3 md:h-1/2 sm:h-1/2 xs:h-full w-full border-r-8 border-b-4 border-t-[1px] border-l-[1px] border-l-gray-300 border-t-gray-300 border-primary rounded-lg overflow-hidden flex flex-row shadow-md hover:scale-110 duration-300 bg-white">
+    <div className=" h-1/3 lg:h-1/3 md:h-1/2 sm:h-1/2 xs:h-4/6 w-full border-r-8 border-b-4 border-t-[1px] border-l-[1px] border-l-gray-300 border-t-gray-300 border-primary rounded-lg overflow-hidden flex flex-row shadow-md hover:scale-105 duration-300 bg-white">
       <div className="w-7/12 h-full flex flex-col  justify-center uppercase p-10 ">
         <p className=" font-bold text-slate-800">{name}</p>
         <p className=" font-bold text-xs text-slate-800">{info}</p>
         <div className="flex flex-wrap row-auto  gap-1 mt-4 w-full h-56 overflow-y-scroll">
           {tools.map((tool, key) => (
             <div
-              className="bg-primary drop-shadow-sm px-5 py-1 rounded-full text-xs font-bold text-white "
+              className="bg-primary drop-shadow-sm px-5 py-1 rounded-full text-xs font-bold text-white xs:py-0 md:py-1 flex items-center "
               key={key}
             >
               {tool}
@@ -27,14 +27,14 @@ export default function Card({
         </div>
         <div className="flex flex-row justify-evenly mt-6 w-full ">
           <a
-            className="bg-secondary h-10 w-1/3 rounded-lg text-lg font-bold text-white shadow-sm flex justify-center items-center"
+            className="bg-secondary h-10 w-1/2 rounded-lg text-lg font-bold text-white shadow-sm flex justify-center items-center mx-1"
             href={git}
             target="_blank"
           >
             Code
           </a>
           <a
-            className="bg-primary h-10 w-1/3 rounded-lg text-lg font-bold text-white shadow-sm flex justify-center items-center"
+            className="bg-primary h-10 w-1/2 rounded-lg text-lg font-bold text-white shadow-sm flex justify-center items-center mx-1"
             href={link}
             target="_blank"
           >
