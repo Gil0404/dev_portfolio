@@ -12,10 +12,13 @@ export default function Home() {
         <Hero />
       </div>
 
-      <div className="h-screen max-h-max snap-center overflow-hidden flex m-3">
+      <div
+        className="h-screen max-h-max snap-center overflow-hidden flex m-3"
+        id="project"
+      >
         <Project />
       </div>
-      <div className="h-1 bg-primary w-screen max-w-max mx-auto" />
+      <div className="h-1 bg-primary w-screen max-w-max mx-auto" id="about" />
       <div className="h-screen max-h-max snap-center flex">
         <About />
       </div>

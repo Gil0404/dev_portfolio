@@ -12,21 +12,22 @@ import Twitter from "../svg/twitter";
 interface listItem {
   title: string;
   path: string;
+  download?: boolean;
 }
 
 const listNav = [
   { title: "Home", path: "/" },
   { title: "project", path: "#project" },
   { title: "about", path: "#about" },
-  { title: "resume", path: "#resume" },
 ];
 
-function Menulist({ title, path }: listItem) {
+function Menulist({ title, path, download }: listItem) {
   return (
     <motion.li variants={itemVar} className="m-1">
       <a
         className=" uppercase font-bold hover:border-b-4 hover:border-b-primary delay-100"
         href={path}
+        download={download ? "Gilbert-Garcia" : false}
       >
         {title}
       </a>
@@ -80,7 +81,11 @@ function Navbar() {
               {listNav.map((item, index) => (
                 <Menulist title={item.title} path={item.path} key={index} />
               ))}
-
+              <Menulist
+                title="Resume"
+                path="GilbertGarcia.pdf"
+                download={true}
+              />
               <div className="m-10"></div>
               <motion.div
                 className="flex flex-col items-center"
