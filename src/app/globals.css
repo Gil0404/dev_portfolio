@@ -25,4 +25,7 @@ body {
   .container-hero {
     @apply w-screen max-w-7xl mx-auto flex;
   }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }

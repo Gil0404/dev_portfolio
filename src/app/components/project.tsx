@@ -6,10 +6,12 @@ import { firestore } from "@/firebase/database";
 
 export type projecttype = {
   id: string;
+  info: string;
   name: string;
   git: string;
   link: string;
   pic: string;
+  tools: string[];
 };
 export default function Project() {
   const [projects, setProjects] = useState<projecttype[]>([]);
@@ -37,7 +39,7 @@ export default function Project() {
     <div className="w-screen max-w-max h-screen flex max-h-max items-center justify-center mx-auto ">
       <div className=" h-hero w-full flex-col flex">
         <div className="h-full w-full ">
-          <h1 className="font-extrabold text-3xl pl-3 py-7 text-primary ">
+          <h1 className="font-extrabold text-3xl md:ml-28 md:mt-16  xs:ml-10 sm:mt-0 text-primary ">
             Project
           </h1>
           <div className=" justify-center items-center  h-full w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 p-2 ">
@@ -49,6 +51,8 @@ export default function Project() {
                 link={project.link}
                 pic={project.pic}
                 key={project.id}
+                info={project.info}
+                tools={project.tools}
               />
             ))}
           </div>

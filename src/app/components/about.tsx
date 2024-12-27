@@ -38,7 +38,7 @@ export default function About() {
             About <span className="text-secondary">Me</span>
           </motion.h1>
           <motion.h1
-            className="text-md text-[#3d155f] font-normal p-2 w-1/2 md:text-xl md:w-1/2 xs:w-full xs:p-4"
+            className="text-md text-[#3d155f] font-normal   md:text-md md:w-1/2 xs:w-full xs:p-4 "
             variants={animate}
             initial="intial"
             animate={inView ? "inView" : "intial"}
